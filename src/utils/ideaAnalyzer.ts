@@ -63,7 +63,7 @@ export function generatePrototype(idea: string): Prototype {
 }
 
 export async function analyzeIdea(idea: string): Promise<{ hypothesis: Hypothesis, prototype: Prototype }> {
-  const result = await fetch(`http://127.0.0.1:3004/product-suggestion/suggest?idea=${idea}`, {
+  const result = await fetch(`https://it-news.aries-happy.com/product-suggestion/suggest?idea=${idea}`, {
     method: 'GET',
   });
   return result.json();
